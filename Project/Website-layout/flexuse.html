@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Use</title>
+    <script src="https://kit.fontawesome.com/987c3b5b33.js" crossorigin="anonymous"></script>
+    <style>
+        .login-container {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .login-form input,
+        button {
+            font-size: 1.3em;
+            margin-top: 15px;
+            border: 1px solid lightgoldenrodyellow;
+            padding: 10px;
+        }
+
+        .login-form button {
+            background-color: rgb(90, 13, 231);
+            color: rgb(218, 223, 224);
+            font-weight: 700;
+            border-radius: 10px;
+        }
+
+
+        nav a {
+            text-decoration: none;
+            color: mediumspringgreen;
+            font-size: 1.5em;
+            margin-right: 15px;
+
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Orders</a>
+                <a href="">About</a>
+            </span>
+
+            <span>
+               <a href=""><i class="fas fa-female"></i></a>
+               <a href=""><i class="fas fa-sign-out-alt"></i></a>
+            </span>
+
+
+        </nav>
+    </header>
+
+    <section class="login-container">
+        <form action="" class="login-form">
+
+            <h2>Login</h2>
+            <input type="email" name="email" placeholder="your email" id="" required>
+            <input type="password" placeholder="Your password" name="password" id="" required>
+            <button type="submit">Longin</button>
+        </form>
+    </section>
+</body>
+
+</html>
